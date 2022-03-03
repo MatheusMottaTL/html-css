@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>degradê com CSS</title>
+    <style>
+        /*configurações globais, você cria um seletor especial (*) */
+        *{
+            height: 100%;
+        }
+        
+        
+        body { /*Primeiro você vai indicar a direção, quantas cores vc quiser, da pra colocar angulos também, troca o "To {alguma direção} pra xdeg, sendo x o angulo." 
+                 também é possivel você fazer o mesmo com angulos negativos
+                 é possivel também, você colocar uma % pra cada cor, basta colocar x% dps da propria cor */
+            background-image: linear-gradient(to top, #1F0812 0.1%, #D1CCDC, #157145, #BA274A, #CBA135);
+            /*você pode transforma de linear para radial e com isso usando circle*/ 
+            background-attachment: fixed; /*fundo fixo*/ 
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradientes</h1>
+</body>
+</html>

@@ -1,0 +1,42 @@
+    /*
+    Medidas absolutas
+    cm, mm, in(polegada), px(pixel), pt(ponto), pc(paica)
+
+    1 cm é 1 cm, só que a gente tem um grande problema na hora de representar isso, as vezes o navegador não consegue chegar exatamente a 1 cm, existem telas de tamanhos diferentes, sua tv vai monstrar de um jeito, seu celular de outro e assim em diante. Até o pixel tem isso. 
+    ponto e paica são medidas da tipografia, de papel, não se recomenda se usar em material que vai se exibido em tela(coisas que vão ser imprimidas) 
+
+    Medidas Relativas
+    obs: viewport é o tamanho da sua tela
+    
+    em(medida relativa ao tamanho atual da fonte[maísculo] ou tamanho da letra normalmente), ex(relacionado a altura x de uma fonte), rem(relativa a fonte configurada no body, é do root, configuração principal, ou do body ou do *), vw([viewwidth]largura da viewport, % da largura da tela de um celular/computador e etc),vh(altura da viewport), %.existem outras mas normalmente usamos essas.
+
+    OBS: Para medidas de fontes(font-size), o w3c recomenda o uso  do "px" e "em". Normalmente os navegadores colocam um font-size de 16px
+        16px  geralmente = 1em   
+        é melhor você usar em, porque você trabalha com % do tamanho da fonte padrão, isso vai ser bom pra quando você estiver monstrando, seu site numa tv, num celular, num tablet , num relogio, numas telas pequenininhas como os assistentes.(Só lembre-se que no caso de px, lembre-se que existem telas que possuem pixel duplo, triplo e assim em diante. Enfim, a recomendação oficial é utilizar o px e o em pela W3C.
+
+
+    Para você ver o peso de uma fonte, você não pode usar Arial, helvetica ou sans-serif, há fontes especificas que se alteram com mais facilidade
+    OBS: weight(peso), width(largura), height(altura)
+    */
+
+        /*
+    Para você ver o peso de uma fonte, você não pode usar Arial, helvetica ou sans-serif, há fontes especificas que se alteram com mais facilidade
+    OBS: weight(peso), width(largura), height(altura)
+    pra peso você pode usar ( lighter, normal, bold, bolder )
+    
+    */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h1{
+    /* shorthand font
+    - font-style -> font-weight -> font-size -> font-family 
+    */
+    font: italic bolder 3em stellar ; 
+} 
+
+h2 {
+    font: bold 2em stellar  ;
+}

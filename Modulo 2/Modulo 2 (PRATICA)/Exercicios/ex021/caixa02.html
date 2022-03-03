@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+
+        header, main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px; /*Top-left, Top right, down-right and down-left [15px é pra todos citados] */
+                                 /*Também ,tem a configuração dupla do mesmo comando */
+        }
+
+        h1{
+            box-shadow:2px 1px 14px 6px rgba(0, 0, 0, 0.398);
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 1px 1px 1px black; /*Deslocamento H, deslocamento V, espalhamento e sombra*/
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        article > aside {
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 4px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 60px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <!--As tagas ai em baixo são consideradas DIVS semânticas-->
+    <header> <!--Cabelçaho-->
+        <h1>Meu site</h1>
+
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+
+    </header>
+
+    <main> <!--Conteúdo Principal-->
+
+      
+        <section id="assuntos"></section> <!--Sessão-->
+
+        <section id="noticias">
+            <article> 
+                <h2>Notícia sobre o Brasil</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, fuga magni? Dolorum repudiandae quo expedita quaerat alias accusantium sequi id a animi quidem delectus tempore perspiciatis quod, nihil, temporibus ex!</p>
+                
+                <aside> <!--Conteúdo periferico ao artigo-->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+                                  
+            </article>
+            <article>
+
+            </article>
+        
+        </section> 
+
+
+    </main>
+
+    <footer> <!--Rodapé-->
+        <p>Desenvolvido pelo CursoemVideo </p>
+    </footer>
+
+    <div id="bola"></div>
+</body>
+</html>
