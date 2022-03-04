@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'IDroid';
-    src: url('\d010\fontes\IDroid.otf') format('opentype');
+    src: url('fontes\IDroid.otf') format('opentype');
 }
 
 :root {
