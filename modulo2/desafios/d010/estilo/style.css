@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: "idroid";
-    src: url("fontes/idroid.otf") format("opentype");
+    font-family: 'IDroid';
+    src: url('\d010\fontes\IDroid.otf') format('opentype');
 }
 
 :root {
@@ -13,7 +13,7 @@
     --cor5: #063D1E;
     --fonte1: 'Bebas Neue', cursive;
     --fonte2: Arial, Helvetica, sans-serif;
-    --fonte3: "idroid";
+    --fonte3: 'IDroid';
 }
 
 *{
@@ -45,6 +45,7 @@ strong{
 main p{
    margin: 15px 0px;
 }
+
 html, body {
     margin: 0px;
     padding: 0px;
@@ -60,7 +61,7 @@ header{
     text-align: center;
     background-image: linear-gradient( to top, var(--cor5) , var(--cor4));
     min-height: 150px;
-    padding: 40px;
+    padding: 40px 0px 40px 0px;
 }
 
 
@@ -83,8 +84,7 @@ header > p {
     text-shadow: 2px  2px  0px rgba(0, 0, 0, 0.466);
     font-size: 20px;
     max-width: 600px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 0px 20px 0px 20px;
     margin: auto;
 }
 nav{
@@ -126,8 +126,8 @@ main{
 }
 
 article > h1 , article > h2{
-    font-family: var(--fonte3);
     color: var(--cor5);
+    font-family: var(--fonte3);
 }
 
 article > h2{
